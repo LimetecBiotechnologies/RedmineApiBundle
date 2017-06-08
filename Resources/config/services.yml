@@ -1,6 +1,0 @@
-parameters:
-  redmine.client.class: Redmine\Client
-
-services:
-  redmine_api:
-    alias: redmineapi.client.default

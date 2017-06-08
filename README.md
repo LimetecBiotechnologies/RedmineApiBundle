@@ -1,6 +1,8 @@
 RedmineApiBundle
 ================
 
+[![Build Status](https://travis-ci.org/LimetecBiotechnologies/RedmineApiBundle.svg)](https://travis-ci.org/LimetecBiotechnologies/RedmineApiBundle)
+
 This bundle integrate the [Redmine API Wrapper](https://github.com/kbsali/php-redmine-api) into your Symfony Project
 
 ##Step1: Install RedmineApiBundle
