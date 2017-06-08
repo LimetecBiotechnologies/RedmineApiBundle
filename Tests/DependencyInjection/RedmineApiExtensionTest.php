@@ -1,6 +1,5 @@
 <?php
 use LimetecBiotechnologies\RedmineApiBundle\DependencyInjection\RedmineApiExtension;
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
@@ -9,7 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  * Date: 08.06.17
  * Time: 14:42
  */
-class RedmineApiExtensionTest extends TestCase {
+class RedmineApiExtensionTest extends PHPUnit_Framework_TestCase {
     /**
      * @var ContainerBuilder
      */
