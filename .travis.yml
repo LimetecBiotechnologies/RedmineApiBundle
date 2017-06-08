@@ -43,3 +43,4 @@ before_script:
   - composer update --prefer-source
 
 script: phpunit
+
