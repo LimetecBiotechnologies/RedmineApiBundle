@@ -5,7 +5,7 @@ RedmineApiBundle
 
 This bundle integrate the [Redmine API Wrapper](https://github.com/kbsali/php-redmine-api) into your Symfony Project
 
-##Step1: Install RedmineApiBundle
+## Step1: Install RedmineApiBundle
 
 The preffered way to install this bundle is to rely on composer.
 
@@ -18,7 +18,7 @@ The preffered way to install this bundle is to rely on composer.
 }
 ```
 
-##Step2: Enable the bundle
+## Step2: Enable the bundle
 
 Finally, enable the bundle in the kernel:
 
@@ -35,7 +35,7 @@ public function registerBundles()
 }
 ```
 
-##Step3: Configure RedmineApiBundle
+## Step3: Configure RedmineApiBundle
 
 Add RedmineApiBundle settings in app/config/config.yml:
 
@@ -52,18 +52,18 @@ redmine_api:
 
 The first client is defined automatically as your default client.
 
-##Step4: Use the redmine api
+## Step4: Use the redmine api
 
 you want to use the default client, you can easy getting the client by the "redmine_api" service-id.
 
 ```php
 $api = $this->get('redmine_api');
-$api->issue->show($ticket);
+$api->getApi('issue')->show($ticket);
 ```
  
 If you want to get one of the other clients, you can getting the specific client by the "redmineapi.client.CLIENT_NAME" service id.
 
 ```php
 $api = $this->get('redmineapi.client.secondclient');
-$api->issue->show($ticket);
+$api->getApi('issue')->show($ticket);
 ```
