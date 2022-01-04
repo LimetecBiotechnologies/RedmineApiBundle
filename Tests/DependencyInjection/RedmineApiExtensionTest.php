@@ -42,9 +42,9 @@ class RedmineApiExtensionTest extends PHPUnit_Framework_TestCase {
        $this->assertTrue($this->container->has('redmineapi.client.firstclient'));
        $this->assertTrue($this->container->has('redmineapi.client.secondclient'));
 
-       $this->assertInstanceOf('Redmine\Client', $this->container->get('redmineapi.client.default'));
-       $this->assertInstanceOf('Redmine\Client', $this->container->get('redmineapi.client.firstclient'));
-       $this->assertInstanceOf('Redmine\Client', $this->container->get('redmineapi.client.secondclient'));
+       $this->assertInstanceOf('Redmine\Client\Client', $this->container->get('redmineapi.client.default'));
+       $this->assertInstanceOf('Redmine\Client\Client', $this->container->get('redmineapi.client.firstclient'));
+       $this->assertInstanceOf('Redmine\Client\Client', $this->container->get('redmineapi.client.secondclient'));
        $this->assertNotSame(
            $this->container->get('redmineapi.client.firstclient'),
            $this->container->get('redmineapi.client.secondclient')
